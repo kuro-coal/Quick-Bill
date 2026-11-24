@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --qb-accent: #1E3A8A;
+  --qb-accent-soft: #EFF6FF;
+  --qb-accent-border: #BFDBFE;
+  --qb-font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --qb-font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--qb-font-sans);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #F4F5F7;
+  color: #0F172A;
+  font-family: var(--qb-font-sans);
+}
+
+.font-tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.font-mono-tabular {
+  font-family: var(--qb-font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Prevent iOS Safari auto-zoom on form input focus */
+input, select, textarea {
+  font-size: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
